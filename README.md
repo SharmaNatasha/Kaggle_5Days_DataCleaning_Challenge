@@ -1,7 +1,7 @@
 # Kaggle_5Days_DataCleaning_Challenge
 
 
-Day -1 Handling Missing Values
+### Day -1 Handling Missing Values
 
     1)	Load the data – 
      pd.read_csv(“……..”)
@@ -29,14 +29,14 @@ Day -1 Handling Missing Values
           Subsetfiledata.fillna(method=’bfill’,axis=0).fillna(0)
 
 
-Day -2 Scale and Normalize Data
+### Day -2 Scale and Normalize Data
      
      Difference between scaling and normalization  In both the cases you will be transforming the values of numeric variables so that the transformed data points have specific helpful properties. The difference is that, in scaling, you are changing the range of your data while in normalization you are changing the shape of the distribution of your data. 
     Scaled_data = minmax_scaling(original_data,column[0])
     Normalized_data = stats.boxcox(original_data)
 
 
-Day -3 Parsing Dates
+### Day -3 Parsing Dates
  
      1)	Check the data type of date column
           Dataset[‘date’].dtype
@@ -47,12 +47,12 @@ Day -3 Parsing Dates
      4)	Remove any missing value rows/column, according to your requirements
 
 
-Day -4 Character Encoding
+### Day -4 Character Encoding
 
     Character encodings are specific sets of rules for mapping from raw binary byte strings (that look like this: 0110100001101001) to characters that make up human-readable text (like "hi"). Though it is not common (UTF-8 is the standard text encoding. All Python code is in UTF-8 and, ideally, all your data should be as well), but Character Encoding mismatches can still be a problem for you.
     You can encode and decode a string as following: after = before.encode("utf-8", errors = "replace") before = after.decode("utf-8")
 
-Day-5 Inconsistent Data Entry
+### Day-5 Inconsistent Data Entry
 
     1)	Preliminary text processing – Find unique and sort the values
               Covert values to lower case and then remove any white space
